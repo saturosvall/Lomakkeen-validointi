@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lomakkeen validointi</title>
+</head>
+<body>
+    <div>
+        <h1>Rekisteröitymislomake</h1>
+        <h3>Siirry kentästä toiseen tab-näppäimellä.</h3>
+    </div>
+    <form name="lomake">
+
+        <titles>Käyttäjä ID: </titles>
+        <input type="text" id="id">
+        <titles>Salasana: </titles>
+        <input type="text" id="salasana">
+        <titles>Nimi: </titles>
+        <input type="text" id="nimi">
+        <titles>Osoite: </titles>
+        <input type="text" id="osoite">
+        <titles>Maa: </titles>
+        <select id="maa" class="select">
+            <option value="maa1">Maa 1</option>
+            <option value="maa2">Maa 2</option>
+            <option value="maa4">Maa3</option>
+        </select>
+        <titles>Postinumero: </titles> 
+        <input type="text" id="postinro">
+        <titles>Sähköposti: </titles> 
+        <input type="text" id="email">
+    </form>
+    <div class="valinnat">    
+        <titles>Sukupuoli: </titles><br>
+        <input type="radio" name="sex" id="male" value="male">
+        <label for="male">Mies</label>
+        <input type="radio" name="sex" id="female" value="female">
+        <label for="female">Nainen</label><br>
+        <titles>Kieli: </titles><br>
+        <input type="checkbox" id="suomi"  value="Suomi">
+        <label for="suomi">Suomi</label><br>
+        <input type="checkbox" id="muukieli" value="Nainen">
+        <label for="muukieli">Muu kuin suomi</label><br>
+
+        <titles>Lisätietoa: </titles><br>
+        <textarea id="text" id="info"></textarea>
+        <button onclick="testi()">Lähetä</button>
+    </div>
+    <p id="print">tähän testi</p>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

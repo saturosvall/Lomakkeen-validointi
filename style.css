@@ -1,0 +1,83 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+div {
+    padding: 1em;
+    background: #f9f9f9;
+    
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+  }
+
+form {
+    display: grid;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin: 2rem auto 0 auto;
+    max-width: 600px;
+    padding: 1em;
+  }
+
+  form select {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+
+  form radio {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+
+  form input {
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+
+  
+  form button {
+    background: lightgrey;
+    padding: 0.7em;
+    width: 100%;
+    border: 0;
+  }
+  form button:hover {
+    background: gold;
+  }
+  
+ titles {
+    padding: 0.5em 0.5em 0.5em 0;
+  }
+  
+  input {
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+  input:focus {
+    outline: 3px solid gold;
+  }
+
+input[type="radio"],
+input[type="checkbox"] {
+  height: 1.2em;
+  width: 1.2em;
+  vertical-align: middle;
+}
+  @media (min-width: 400px) {
+    form {
+      grid-template-columns: 200px 1fr;
+      grid-gap: 16px;
+    }
+  
+    titles {
+      text-align: right;
+      grid-column: 1 / 2;
+    }
+  
+    input,
+    button {
+      grid-column: 2 / 3;
+    }
+  }
