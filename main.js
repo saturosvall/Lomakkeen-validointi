@@ -21,18 +21,19 @@ if (salasana.length > 5 && salasana.match(/[a-z]/) && salasana.match(/[A-Z]/) &&
 
 // Määritellään validin nimen ehdot
 let nimi = document.forms['lomake']['nimi'].value;
-if (nimi.length < 0) {
-    teksti += "Nimitieto pakollinen." + "<br>"
-} else {
+if (nimi.length > 0) {
     teksti += "Nimi: OK" + "<br>"
+} else {
+    teksti += "Nimitieto pakollinen." + "<br>"
+
 }
 
 // Määritellään validin osoitteen ehdot
 let osoite = document.forms['lomake']['osoite'].value;
-if (osoite.length < 0) {
-    teksti += "Osoitetieto pakollinen."+"<br>"
-} else {
+if (osoite.length > 0) {
     teksti += "Osoite: OK" + "<br>"
+} else {
+    teksti += "Osoitetieto pakollinen."+"<br>";
 }
 
 // Määritellään validin maan ehdot (maa tulee olla valittuna)
