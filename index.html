@@ -23,6 +23,7 @@
         <input type="text" id="osoite">
         <titles>Maa: </titles>
         <select id="maa" class="select">
+            <option value="tyhja" selected="selected">(Valitse maa)</option>
             <option value="maa1">Maa 1</option>
             <option value="maa2">Maa 2</option>
             <option value="maa4">Maa3</option>
@@ -32,6 +33,7 @@
         <titles>Sähköposti: </titles> 
         <input type="text" id="email">
     </form>
+
     <div class="valinnat">    
         <titles>Sukupuoli: </titles><br>
         <input type="radio" name="sex" id="male" value="male">
@@ -45,11 +47,12 @@
         <label for="muukieli">Muu kuin suomi</label><br>
 
         <titles>Lisätietoa: </titles><br>
-        <textarea id="text" id="info"></textarea>
+        <textarea id="text" id="info"></textarea><br>
         <button onclick="testi()">Lähetä</button>
     </div>
-    <p id="print">tähän testi</p>
-
+    <div>
+    <p id="print"></p>
+    </div>
 
     <script src="main.js"></script>
 </body>
